@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="prediksi">
+        <form action="" method="post">
+            <h1>PREDIKSI BRAND HANDPHONE</h1>
+            <label for="">Storage</label>
+            <input type="number" name="storage", step="any" placeholder="Masukkan Storage" required/>
+            <label for="">RAM</label>
+            <input type="number" name="ram", step="any" placeholder="Masukkan RAM" required/>
+            <label for="">Screen Size</label>            
+            <input type="number" name="screenSize", step="any" placeholder="Masukkan Screen Size" required/>
+            <label for="">Front Camera</label>
+            <input type="number" name="frontCamera", step="any" placeholder="Masukkan Front Camera" required/>
+            <label for="">Rear Camera</label>
+            <input type="number" name="rearCamera", step="any" placeholder="Masukkan Rear Camera" required/>
+            <label for="">Battery</label>
+            <input type="number" name="battery", step="any" placeholder="Masukkan Battery" required/>
+            <label for="">Price</label>
+            <input type="number" name="price", step="any" placeholder="Masukkan Price" required/>
+            <button value="Submit">Prediksi</button>
+        </form>
+        </div>
+        <div class="hasil">
+            <h1>HASIL PREDIKSI</h1>
+            <p style="text-align: center;">Prediksi Brand Random Forest : {{ output[0] }}</p>
+            <p style="text-align: center;">Prediksi Brand Decision Tree : {{ output[1] }}</p>
+            <img src="{{ url_for('static', filename='images/influencer.png') }}" alt="smartphone">
+        </div>
+    </div>
+    
+</body>
+</html>

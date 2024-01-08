@@ -1,0 +1,88 @@
+/* CSS untuk elemen body */
+
+body {
+    line-height: 1.6; /* Tinggi baris */
+    color: #333; /* Warna teks */
+    background-color: #fe9394; /* Warna latar belakang */
+    margin: 0; /* Hilangkan margin bawaan */
+    padding: 0; /* Hilangkan padding bawaan */
+    display: flex;
+    min-height: 100vh; /* Menjamin bahwa body setidaknya memiliki tinggi sebesar viewport height */
+    align-items: center; /* Memusatkan secara vertikal */
+    font-family: 'Montserrat', sans-serif;
+}
+  
+/* CSS untuk container */
+.container {
+    width: 80%; /* Lebar container */
+    max-width: 1200px; /* Lebar maksimum container */
+    margin: auto auto;
+    background-color: #ffffff; /* Warna latar belakang container */
+    padding: 10px; /* Padding di dalam container */
+    border: 1px solid #ddd; /* Border container */
+    border-radius: 8px; /* Sudut bulat pada border container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan pada container */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Repeat 3 kolom dengan lebar 1 fraksi */
+    gap: 20px;
+}
+
+h1{
+    margin: 0px;
+    font-size: 26px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px; /* Lebar maksimum formulir */
+    margin: 0 auto; /* Memusatkan formulir di dalam kontainer */
+    display: grid;
+    flex-direction: column; /* Tampilkan elemen dalam kolom */
+}
+
+label {
+    margin-bottom: 2px; /* Ruang antara label */
+    margin-top: 0px;
+}
+
+input {
+    width: 100%; /* Penuhi lebar formulir */
+    padding: 7px; /* Ruang di dalam elemen input */
+    margin-bottom: 2px; /* Ruang antara elemen input */
+    box-sizing: border-box; /* Menyertakan padding dan border dalam lebar total */
+}
+
+/* CSS untuk tombol */
+button {
+    margin-top: 13px;
+    margin-bottom: 7px;
+    display: inline-block;
+    padding: 10px 0px; /* Atur padding sesuai kebutuhan Anda */
+    font-size: 16px; /* Atur ukuran font sesuai kebutuhan Anda */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #905bb7; /* Warna border */
+    border-radius: 5px; /* Sudut border */
+    background-color: #905bb7; /* Warna latar belakang */
+    color: #ffffff; /* Warna teks */
+    transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+}
+  
+  /* CSS untuk hover tombol */
+button:hover {
+    background-color: #60367d; /* Warna latar belakang saat dihover */
+    color: #ffffff; /* Warna teks saat dihover */
+}
+
+.hasil img{
+    /* CSS untuk gambar */
+    max-width: 70%; /* Gambar tidak melebihi lebar kontainer */
+    height: auto; /* Menjaga aspek ratio gambar */
+    display: block; /* Menghilangkan spasi tambahan di sekitar gambar */
+    margin: auto; /* Memusatkan gambar di dalam kontainer */
+    border-radius: 8px; /* Sudut bulat pada gambar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan pada gambar */
+    align-items: center;
+    margin-top: 30px;
+}
